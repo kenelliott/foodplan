@@ -83,3 +83,5 @@ All dinner recipes must follow these constraints:
 3. **No spiralized vegetables.** Do not use zucchini noodles, spiralized carrots, or any vegetable-as-noodle substitute.
 4. **Light sauces only.** Sauces should add flavor without heavy calories. No cream-based, cheese-heavy, or butter-rich sauces. Prefer vinaigrettes, citrus-based, soy-ginger, chimichurri, salsa, or herb-forward sauces.
 5. **Under 1 hour of active prep.** Any meal that requires more than 60 minutes of hands-on preparation must be scheduled on a Prep Day (Sunday).
+6. **No scallops.** Do not include scallops in any meal.
+7. **No catfish.** Do not include catfish in any meal.
