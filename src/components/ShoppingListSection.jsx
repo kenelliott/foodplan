@@ -46,7 +46,7 @@ export default function ShoppingListSection({ shoppingLists }) {
 						</AccordionSummary>
 						<AccordionDetails>
 							{list.categories.map((cat, i) => {
-								const items = cat.items.split(",").map((s) => s.trim()).filter(Boolean);
+								const items = Array.isArray(cat.items) ? cat.items : [cat.items];
 								return (
 									<div key={cat.name}>
 										<Chip

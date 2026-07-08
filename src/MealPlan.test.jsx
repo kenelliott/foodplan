@@ -15,6 +15,11 @@ describe("MealPlan", () => {
 		expect(screen.getByLabelText("Meal Plan")).toBeInTheDocument();
 	});
 
+	it("renders the people selector dropdown", () => {
+		render(<MealPlan />);
+		expect(screen.getByLabelText("People")).toBeInTheDocument();
+	});
+
 	it("renders the strategy alert", () => {
 		render(<MealPlan />);
 		const alerts = screen.getAllByRole("alert");

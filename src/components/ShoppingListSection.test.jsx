@@ -7,15 +7,15 @@ const shoppingLists = [
 	{
 		label: "Week 1 — Buy Sunday",
 		categories: [
-			{ name: "Produce", items: "Mixed berries (2 pints), bananas (6)" },
-			{ name: "Protein", items: "Whole chicken (4–5 lb), eggs (1 dozen)" },
+			{ name: "Produce", items: ["Mixed berries (2 pints)", "bananas (6)"] },
+			{ name: "Protein", items: ["Whole chicken (4–5 lb)", "eggs (1 dozen)"] },
 		],
 	},
 	{
 		label: "Week 2 — Buy Sunday",
 		categories: [
-			{ name: "Produce", items: "Mixed berries (1 pint)" },
-			{ name: "Protein", items: "Chicken thighs (3 lb)" },
+			{ name: "Produce", items: ["Mixed berries (1 pint)"] },
+			{ name: "Protein", items: ["Chicken thighs (3 lb)"] },
 		],
 	},
 ];
