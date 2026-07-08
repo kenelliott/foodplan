@@ -17,8 +17,11 @@ describe("MealPlan", () => {
 
 	it("renders the strategy alert", () => {
 		render(<MealPlan />);
-		const alert = screen.getByRole("alert");
-		expect(within(alert).getByText(/Batch-cook on Sundays/)).toBeInTheDocument();
+		const alerts = screen.getAllByRole("alert");
+		const strategyAlert = alerts.find((el) =>
+			el.textContent.includes("Batch-cook on Sundays"),
+		);
+		expect(strategyAlert).toBeDefined();
 	});
 
 	it("renders both week sections", () => {

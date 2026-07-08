@@ -69,3 +69,7 @@ src/
 1. Create a new file in `src/data/plans/` named by start date (e.g. `2026-07-21.js`)
 2. Export `id` (date string), `label` (display name), `weeks`, `wastePrevention`, and `shoppingLists`
 3. Import and add it to the `plans` array in `src/data/plans/index.js`
+
+### Editing meals or ingredients
+
+When a day, meal, or ingredient is changed in a plan file, **always update the `shoppingLists` in the same file to match**. Add new ingredients and remove ones that are no longer needed. The Combined Shopping List component derives its data from `shoppingLists`, so they must stay in sync.

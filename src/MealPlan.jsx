@@ -8,6 +8,8 @@ import {
 	Typography,
 } from "@mui/material";
 import { useState } from "react";
+import ApproachSection from "./components/ApproachSection";
+import CombinedShoppingList from "./components/CombinedShoppingList";
 import GroceryPhilosophy from "./components/GroceryPhilosophy";
 import ShoppingListSection from "./components/ShoppingListSection";
 import WastePreventionSection from "./components/WastePreventionSection";
@@ -47,6 +49,12 @@ export default function MealPlan() {
 			</Alert>
 
 			<GroceryPhilosophy philosophy={intro.philosophy} />
+
+			{plan.approach && <ApproachSection approach={plan.approach} />}
+
+			<Box sx={{ mt: 2, mb: 2 }}>
+				<CombinedShoppingList shoppingLists={plan.shoppingLists} />
+			</Box>
 
 			{plan.weeks.map((w) => (
 				<WeekAccordion key={w.label} week={w} />
