@@ -55,11 +55,11 @@ export default function ShoppingListSection({ shoppingLists }) {
 											size="small"
 											sx={{ mb: 1, mt: i > 0 ? 1 : 0 }}
 										/>
-										<List dense disablePadding>
+										<List dense disablePadding sx={{ columns: 3 }}>
 											{items.map((item) => {
 												const key = `${list.label}::${cat.name}::${item}`;
 												return (
-													<ListItem key={key} disablePadding>
+													<ListItem key={key} disablePadding sx={{ breakInside: "avoid" }}>
 														<ListItemButton dense onClick={() => toggleItem(key)}>
 															<ListItemIcon sx={{ minWidth: 36 }}>
 																<Checkbox
