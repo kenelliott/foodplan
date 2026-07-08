@@ -1,18 +1,39 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
-import ShoppingListSection from "../components/ShoppingListSection";
+import ShoppingListSection from "./ShoppingListSection";
+
+const shoppingLists = [
+	{
+		label: "Week 1 — Buy Sunday",
+		categories: [
+			{ name: "Produce", items: "Mixed berries (2 pints), bananas (6)" },
+			{ name: "Protein", items: "Whole chicken (4–5 lb), eggs (1 dozen)" },
+			{ name: "Pantry / Dry", items: "Quinoa, jasmine rice" },
+			{ name: "Dairy / Other", items: "Shredded cheese, feta" },
+		],
+	},
+	{
+		label: "Week 2 — Buy Sunday",
+		categories: [
+			{ name: "Produce", items: "Mixed berries (1 pint)" },
+			{ name: "Protein", items: "Chicken thighs (3 lb)" },
+			{ name: "Pantry / Dry", items: "Brown rice, couscous" },
+			{ name: "Dairy / Other", items: "Parmesan, shredded cheese" },
+		],
+	},
+];
 
 describe("ShoppingListSection", () => {
 	it("renders the section heading", () => {
-		render(<ShoppingListSection />);
+		render(<ShoppingListSection shoppingLists={shoppingLists} />);
 		expect(
 			screen.getByRole("button", { name: /Shopping Lists/ }),
 		).toBeInTheDocument();
 	});
 
 	it("shows week labels when expanded", async () => {
-		render(<ShoppingListSection />);
+		render(<ShoppingListSection shoppingLists={shoppingLists} />);
 		await userEvent.click(
 			screen.getByRole("button", { name: /Shopping Lists/ }),
 		);
@@ -26,7 +47,7 @@ describe("ShoppingListSection", () => {
 	});
 
 	it("shows category chips when a week is expanded", async () => {
-		render(<ShoppingListSection />);
+		render(<ShoppingListSection shoppingLists={shoppingLists} />);
 		await userEvent.click(
 			screen.getByRole("button", { name: /Shopping Lists/ }),
 		);
@@ -42,7 +63,7 @@ describe("ShoppingListSection", () => {
 	});
 
 	it("shows shopping items under a category", async () => {
-		render(<ShoppingListSection />);
+		render(<ShoppingListSection shoppingLists={shoppingLists} />);
 		await userEvent.click(
 			screen.getByRole("button", { name: /Shopping Lists/ }),
 		);

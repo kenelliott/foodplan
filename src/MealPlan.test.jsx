@@ -1,6 +1,6 @@
 import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import MealPlan from "../MealPlan";
+import MealPlan from "./MealPlan";
 
 describe("MealPlan", () => {
 	it("renders the page title", () => {
@@ -8,6 +8,11 @@ describe("MealPlan", () => {
 		expect(
 			screen.getByRole("heading", { name: /2-Week Healthy Meal Plan/, level: 3 }),
 		).toBeInTheDocument();
+	});
+
+	it("renders the plan selector dropdown", () => {
+		render(<MealPlan />);
+		expect(screen.getByLabelText("Meal Plan")).toBeInTheDocument();
 	});
 
 	it("renders the strategy alert", () => {

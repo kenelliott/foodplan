@@ -1,7 +1,7 @@
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
-import DayAccordion from "../components/DayAccordion";
+import DayAccordion from "./DayAccordion";
 
 const dayWithBatch = {
 	day: "Sunday — Prep Day",

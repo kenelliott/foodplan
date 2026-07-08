@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
-import WeekAccordion from "../components/WeekAccordion";
+import WeekAccordion from "./WeekAccordion";
 
 const week = {
 	label: "Week 1",

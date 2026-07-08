@@ -11,9 +11,8 @@ import {
 	ListItemText,
 	Typography,
 } from "@mui/material";
-import { wastePrevention } from "../mealPlanData";
 
-export default function WastePreventionSection() {
+export default function WastePreventionSection({ wastePrevention }) {
 	return (
 		<Accordion>
 			<AccordionSummary expandIcon={<ExpandMoreIcon />}>

@@ -10,9 +10,8 @@ import {
 	ListItemText,
 	Typography,
 } from "@mui/material";
-import { intro } from "../mealPlanData";
 
-export default function GroceryPhilosophy() {
+export default function GroceryPhilosophy({ philosophy }) {
 	return (
 		<Accordion sx={{ mb: 3 }}>
 			<AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -22,7 +21,7 @@ export default function GroceryPhilosophy() {
 			</AccordionSummary>
 			<AccordionDetails>
 				<List dense>
-					{intro.philosophy.map((p) => (
+					{philosophy.map((p) => (
 						<ListItem key={p}>
 							<ListItemIcon sx={{ minWidth: 36 }}>
 								<CheckCircleOutlineIcon color="primary" fontSize="small" />

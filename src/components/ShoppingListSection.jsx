@@ -9,9 +9,8 @@ import {
 	Divider,
 	Typography,
 } from "@mui/material";
-import { shoppingLists } from "../mealPlanData";
 
-export default function ShoppingListSection() {
+export default function ShoppingListSection({ shoppingLists }) {
 	return (
 		<Accordion>
 			<AccordionSummary expandIcon={<ExpandMoreIcon />}>

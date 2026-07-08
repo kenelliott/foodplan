@@ -17,7 +17,7 @@ Vite + React app using MUI (Material UI) for the UI. Tests use Vitest with React
 
 - Test environment: `jsdom` (configured in `vite.config.js`)
 - Setup file: `src/test/setup.js` — imports `@testing-library/jest-dom/vitest` and runs `cleanup` after each test
-- Test files live in `src/test/` and use the `.test.jsx` extension
+- Test files live alongside their components and use the `.test.jsx` extension
 
 ### MUI + React Testing Library gotchas
 
@@ -55,8 +55,17 @@ expect(screen.getAllByText("Produce").length).toBeGreaterThanOrEqual(1);
 ```
 src/
   components/       — Reusable UI components (DayAccordion, WeekAccordion, etc.)
-  test/             — Vitest test files and setup
-  mealPlanData.js   — Static data for the meal plan
-  MealPlan.jsx      — Page-level component composing all sections
+  data/
+    intro.js        — Shared intro/philosophy data
+    plans/          — One file per 2-week meal plan (e.g. 2026-07-07.js)
+      index.js      — Registry that imports and exports all plan modules
+  test/             — Vitest setup file
+  MealPlan.jsx      — Page-level component with plan selector dropdown
   App.jsx           — App shell with CssBaseline
 ```
+
+### Adding a new meal plan
+
+1. Create a new file in `src/data/plans/` named by start date (e.g. `2026-07-21.js`)
+2. Export `id` (date string), `label` (display name), `weeks`, `wastePrevention`, and `shoppingLists`
+3. Import and add it to the `plans` array in `src/data/plans/index.js`
