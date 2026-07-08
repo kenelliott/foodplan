@@ -320,12 +320,12 @@ const menuItems = [
     ],
   },
   {
-    id: "harissa-lamb-chops-couscous",
-    title: "Harissa Lamb Chops with Couscous",
+    id: "harissa-chicken-thighs-couscous",
+    title: "Harissa Chicken Thighs with Couscous",
     description:
-      "Broiled lamb loin chops rubbed with harissa paste, served over fluffy couscous with roasted cherry tomatoes.",
+      "Broiled chicken thighs rubbed with harissa paste, served over fluffy couscous with roasted cherry tomatoes.",
     ingredients: [
-      { name: "Lamb Loin Chops", quantity: "200g" },
+      { name: "Chicken Thighs (boneless, skinless)", quantity: "200g" },
       { name: "Couscous", quantity: "75g dry" },
       { name: "Cherry Tomatoes", quantity: "150g" },
       { name: "Cucumber", quantity: "1/2" },
@@ -356,12 +356,12 @@ const menuItems = [
     ],
   },
   {
-    id: "seared-tuna-sesame-salad",
-    title: "Seared Tuna Steak with Sesame Salad",
+    id: "sesame-salmon-salad",
+    title: "Sesame-Crusted Salmon with Edamame Salad",
     description:
-      "Sesame-crusted seared ahi tuna over a crisp salad of mixed greens, cucumber, edamame, and a citrus-soy dressing.",
+      "Sesame-crusted pan-seared salmon over a crisp salad of mixed greens, cucumber, edamame, and a citrus-soy dressing.",
     ingredients: [
-      { name: "Ahi Tuna Steak", quantity: "180g" },
+      { name: "Salmon Fillet", quantity: "180g" },
       { name: "Mixed Greens", quantity: "100g" },
       { name: "Cucumber", quantity: "1 medium" },
       { name: "Edamame", quantity: "100g" },
@@ -483,12 +483,12 @@ const menuItems = [
     ],
   },
   {
-    id: "pan-seared-duck-cherry-sauce",
-    title: "Pan-Seared Duck Breast with Cherry Sauce",
+    id: "pork-tenderloin-cherry-sauce",
+    title: "Pork Tenderloin with Cherry Sauce",
     description:
-      "Scored duck breast pan-seared to crispy skin, finished with a light tart cherry and red wine reduction, served with roasted sweet potato.",
+      "Pan-seared pork tenderloin medallions finished with a light tart cherry and red wine reduction, served with roasted sweet potato.",
     ingredients: [
-      { name: "Duck Breast", quantity: "200g" },
+      { name: "Pork Tenderloin", quantity: "200g" },
       { name: "Sweet Potato", quantity: "1 large" },
       { name: "Cherries (fresh or frozen)", quantity: "100g" },
     ],
@@ -531,12 +531,12 @@ const menuItems = [
     ],
   },
   {
-    id: "seared-swordfish-corn-succotash",
-    title: "Seared Swordfish with Corn Succotash",
+    id: "seared-mahi-corn-succotash",
+    title: "Seared Mahi-Mahi with Corn Succotash",
     description:
-      "Pan-seared swordfish steak served over a warm succotash of corn, cherry tomatoes, zucchini, and fresh basil.",
+      "Pan-seared mahi-mahi fillet served over a warm succotash of corn, cherry tomatoes, zucchini, and fresh basil.",
     ingredients: [
-      { name: "Swordfish Steak", quantity: "180g" },
+      { name: "Mahi-Mahi Fillet", quantity: "180g" },
       { name: "Corn", quantity: "2 ears" },
       { name: "Cherry Tomatoes", quantity: "100g" },
       { name: "Zucchini", quantity: "1" },
@@ -621,12 +621,12 @@ const menuItems = [
     ],
   },
   {
-    id: "sesame-crusted-ahi-poke-bowl",
-    title: "Sesame-Crusted Ahi Poke Bowl",
+    id: "teriyaki-chicken-rice-bowl",
+    title: "Teriyaki Chicken Rice Bowl",
     description:
-      "Seared sesame-crusted ahi tuna over sushi rice with avocado, edamame, cucumber, and a ponzu drizzle.",
+      "Grilled teriyaki chicken thigh over sushi rice with avocado, edamame, cucumber, and a ponzu drizzle.",
     ingredients: [
-      { name: "Ahi Tuna Steak", quantity: "180g" },
+      { name: "Chicken Thighs (boneless, skinless)", quantity: "200g" },
       { name: "Sushi Rice", quantity: "75g dry" },
       { name: "Avocado", quantity: "1/2" },
       { name: "Edamame", quantity: "100g" },
@@ -674,12 +674,12 @@ const menuItems = [
     ],
   },
   {
-    id: "bourbon-glazed-pork-belly-slaw",
-    title: "Bourbon-Glazed Pork Belly with Apple Slaw",
+    id: "bourbon-glazed-pork-chops-slaw",
+    title: "Bourbon-Glazed Pork Chops with Apple Slaw",
     description:
-      "Crispy roasted pork belly with a light bourbon glaze, paired with a fresh apple and cabbage slaw.",
+      "Grilled pork chops with a light bourbon glaze, paired with a fresh apple and cabbage slaw.",
     ingredients: [
-      { name: "Pork Belly", quantity: "200g" },
+      { name: "Pork Chops (bone-in)", quantity: "250g" },
       { name: "Apple", quantity: "1" },
       { name: "Cabbage", quantity: "150g" },
       { name: "Carrots", quantity: "1 medium" },
@@ -687,12 +687,12 @@ const menuItems = [
     ],
   },
   {
-    id: "moroccan-lamb-stew",
-    title: "Moroccan Lamb Stew with Chickpeas",
+    id: "moroccan-beef-stew-chickpeas",
+    title: "Moroccan Beef Stew with Chickpeas",
     description:
-      "Fragrant lamb stew with chickpeas, diced tomatoes, sweet potato, and warm Moroccan spices, served over couscous.",
+      "Fragrant beef stew with chickpeas, diced tomatoes, sweet potato, and warm Moroccan spices, served over couscous.",
     ingredients: [
-      { name: "Lamb Stew Meat", quantity: "200g" },
+      { name: "Beef Chuck (cubed)", quantity: "200g" },
       { name: "Canned Chickpeas", quantity: "200g drained" },
       { name: "Sweet Potato", quantity: "1 medium" },
       { name: "Canned Diced Tomatoes", quantity: "200g" },
@@ -700,12 +700,12 @@ const menuItems = [
     ],
   },
   {
-    id: "blackened-grouper-collard-greens",
-    title: "Blackened Grouper with Collard Greens",
+    id: "blackened-tilapia-collard-greens",
+    title: "Blackened Tilapia with Collard Greens",
     description:
-      "Cajun-blackened grouper fillets served with braised collard greens and a side of black-eyed peas.",
+      "Cajun-blackened tilapia fillets served with braised collard greens and a side of black-eyed peas.",
     ingredients: [
-      { name: "Grouper Fillet", quantity: "180g" },
+      { name: "Tilapia Fillet", quantity: "180g" },
       { name: "Collard Greens", quantity: "200g" },
       { name: "Canned Black-Eyed Peas", quantity: "200g drained" },
       { name: "Lemon", quantity: "1" },
@@ -737,12 +737,12 @@ const menuItems = [
     ],
   },
   {
-    id: "grilled-halibut-mango-avocado",
-    title: "Grilled Halibut with Mango-Avocado Salsa",
+    id: "grilled-salmon-mango-avocado",
+    title: "Grilled Salmon with Mango-Avocado Salsa",
     description:
-      "Grilled halibut fillet topped with a fresh mango-avocado salsa, served with coconut rice.",
+      "Grilled salmon fillet topped with a fresh mango-avocado salsa, served with coconut rice.",
     ingredients: [
-      { name: "Halibut Fillet", quantity: "180g" },
+      { name: "Salmon Fillet", quantity: "180g" },
       { name: "Mango", quantity: "1/2" },
       { name: "Avocado", quantity: "1/2" },
       { name: "Jasmine Rice", quantity: "75g dry" },
@@ -751,15 +751,15 @@ const menuItems = [
     ],
   },
   {
-    id: "herb-roasted-cornish-hen",
-    title: "Herb-Roasted Cornish Hen with Root Vegetables",
+    id: "herb-roasted-chicken-root-veg",
+    title: "Herb-Roasted Chicken Thighs with Root Vegetables",
     description:
-      "Whole Cornish hen roasted with fresh herbs, served with roasted parsnips, carrots, and fingerling potatoes.",
+      "Bone-in chicken thighs roasted with fresh herbs, served with roasted carrots, potatoes, and onion.",
     ingredients: [
-      { name: "Cornish Hen", quantity: "1 whole" },
-      { name: "Parsnips", quantity: "1 medium" },
+      { name: "Chicken Thighs (bone-in)", quantity: "300g" },
       { name: "Carrots", quantity: "2 medium" },
-      { name: "Fingerling Potatoes", quantity: "150g" },
+      { name: "Yukon Gold Potatoes", quantity: "200g" },
+      { name: "Yellow Onion", quantity: "1" },
       { name: "Lemon", quantity: "1" },
     ],
   },
@@ -777,12 +777,12 @@ const menuItems = [
     ],
   },
   {
-    id: "pistachio-crusted-rack-of-lamb",
-    title: "Pistachio-Crusted Rack of Lamb",
+    id: "pistachio-crusted-chicken-breast",
+    title: "Pistachio-Crusted Chicken Breast",
     description:
-      "Rack of lamb with a pistachio-herb crust, roasted and served with roasted broccolini and a mint-lemon gremolata.",
+      "Baked chicken breast with a pistachio-herb crust, served with roasted broccolini and a mint-lemon gremolata.",
     ingredients: [
-      { name: "Rack of Lamb", quantity: "250g" },
+      { name: "Chicken Breast", quantity: "200g" },
       { name: "Broccolini", quantity: "200g" },
       { name: "Pistachios", quantity: "30g" },
       { name: "Lemon", quantity: "1" },
@@ -816,12 +816,12 @@ const menuItems = [
     ],
   },
   {
-    id: "pan-seared-trout-almond-brown-butter",
-    title: "Pan-Seared Trout with Almond Brown Butter",
+    id: "pan-seared-cod-almond-brown-butter",
+    title: "Pan-Seared Cod with Almond Brown Butter",
     description:
-      "Delicate rainbow trout pan-seared and finished with a light almond brown butter, served with sautéed spinach and wild rice.",
+      "Cod fillet pan-seared and finished with a light almond brown butter, served with sautéed spinach and wild rice.",
     ingredients: [
-      { name: "Rainbow Trout Fillet", quantity: "180g" },
+      { name: "Cod Fillet", quantity: "180g" },
       { name: "Fresh Spinach", quantity: "100g" },
       { name: "Wild Rice", quantity: "75g dry" },
       { name: "Almonds", quantity: "20g" },
@@ -854,25 +854,25 @@ const menuItems = [
     ],
   },
   {
-    id: "chimichurri-grilled-lamb-chops",
-    title: "Chimichurri Grilled Lamb Chops",
+    id: "chimichurri-grilled-flank-steak",
+    title: "Chimichurri Grilled Flank Steak",
     description:
-      "Grilled lamb loin chops topped with fresh chimichurri, served with roasted fingerling potatoes and arugula.",
+      "Grilled flank steak sliced thin and topped with fresh chimichurri, served with roasted potatoes and arugula.",
     ingredients: [
-      { name: "Lamb Loin Chops", quantity: "200g" },
-      { name: "Fingerling Potatoes", quantity: "150g" },
+      { name: "Flank Steak", quantity: "200g" },
+      { name: "Yukon Gold Potatoes", quantity: "200g" },
       { name: "Arugula", quantity: "60g" },
       { name: "Fresh Parsley", quantity: "1/4 cup" },
       { name: "Lime", quantity: "1" },
     ],
   },
   {
-    id: "orange-glazed-duck-bok-choy",
-    title: "Orange-Glazed Duck Breast with Bok Choy",
+    id: "orange-glazed-chicken-bok-choy",
+    title: "Orange-Glazed Chicken Thighs with Bok Choy",
     description:
-      "Pan-seared duck breast with a light orange glaze, served with sautéed baby bok choy and steamed jasmine rice.",
+      "Pan-seared chicken thighs with a light orange glaze, served with sautéed baby bok choy and steamed jasmine rice.",
     ingredients: [
-      { name: "Duck Breast", quantity: "200g" },
+      { name: "Chicken Thighs (boneless, skinless)", quantity: "200g" },
       { name: "Baby Bok Choy", quantity: "200g" },
       { name: "Jasmine Rice", quantity: "75g dry" },
       { name: "Orange", quantity: "1" },
@@ -891,12 +891,12 @@ const menuItems = [
     ],
   },
   {
-    id: "lemon-caper-sole-rice-pilaf",
-    title: "Lemon-Caper Sole with Rice Pilaf",
+    id: "lemon-caper-cod-rice-pilaf",
+    title: "Lemon-Caper Cod with Rice Pilaf",
     description:
-      "Pan-seared sole fillets finished with a light lemon-caper sauce, served alongside herbed rice pilaf and steamed green beans.",
+      "Pan-seared cod fillets finished with a light lemon-caper sauce, served alongside herbed rice pilaf and steamed green beans.",
     ingredients: [
-      { name: "Sole Fillet", quantity: "180g" },
+      { name: "Cod Fillet", quantity: "180g" },
       { name: "Jasmine Rice", quantity: "75g dry" },
       { name: "Green Beans", quantity: "150g" },
       { name: "Lemon", quantity: "1" },
@@ -913,6 +913,302 @@ const menuItems = [
       { name: "Jasmine Rice", quantity: "75g dry" },
       { name: "Radishes", quantity: "4" },
       { name: "Green Onion", quantity: "3 stalks" },
+    ],
+  },
+  {
+    id: "spanish-chicken-chorizo-rice",
+    title: "Spanish Chicken & Chorizo Rice",
+    description:
+      "One-pot dish of seared chicken thighs and sliced chorizo cooked with saffron-scented rice, roasted red peppers, and peas.",
+    ingredients: [
+      { name: "Chicken Thighs (boneless, skinless)", quantity: "200g" },
+      { name: "Chorizo", quantity: "60g" },
+      { name: "Jasmine Rice", quantity: "75g dry" },
+      { name: "Bell Pepper", quantity: "1" },
+      { name: "Frozen Peas", quantity: "75g" },
+      { name: "Lemon", quantity: "1" },
+    ],
+  },
+  {
+    id: "miso-marinated-salmon",
+    title: "Miso-Marinated Salmon with Edamame Rice",
+    description:
+      "Broiled salmon marinated in white miso, served over jasmine rice tossed with edamame and a drizzle of ponzu.",
+    ingredients: [
+      { name: "Salmon Fillet", quantity: "180g" },
+      { name: "Jasmine Rice", quantity: "75g dry" },
+      { name: "Edamame", quantity: "100g" },
+      { name: "Green Onion", quantity: "2 stalks" },
+    ],
+  },
+  {
+    id: "carne-asada-street-tacos",
+    title: "Carne Asada Street Tacos",
+    description:
+      "Grilled marinated skirt steak sliced thin on warm corn tortillas with diced onion, cilantro, and a squeeze of lime.",
+    ingredients: [
+      { name: "Skirt Steak", quantity: "200g" },
+      { name: "Corn Tortillas", quantity: "4 small" },
+      { name: "Onion", quantity: "1/2" },
+      { name: "Cilantro", quantity: "2 tbsp" },
+      { name: "Lime", quantity: "1" },
+      { name: "Radishes", quantity: "3" },
+    ],
+  },
+  {
+    id: "herb-butter-roasted-spatchcock-chicken",
+    title: "Herb-Butter Roasted Spatchcock Chicken",
+    description:
+      "Spatchcocked whole chicken roasted with herbs and a touch of butter, served with roasted root vegetables.",
+    ingredients: [
+      { name: "Whole Chicken", quantity: "1/2 bird" },
+      { name: "Carrots", quantity: "2 medium" },
+      { name: "Parsnips", quantity: "1 medium" },
+      { name: "Red Onion", quantity: "1/2" },
+      { name: "Lemon", quantity: "1" },
+    ],
+  },
+  {
+    id: "coconut-lime-mahi-tacos",
+    title: "Coconut-Lime Mahi-Mahi Tacos",
+    description:
+      "Pan-seared coconut-crusted mahi-mahi in corn tortillas with a lime-dressed cabbage slaw and avocado.",
+    ingredients: [
+      { name: "Mahi-Mahi Fillet", quantity: "180g" },
+      { name: "Corn Tortillas", quantity: "4 small" },
+      { name: "Cabbage", quantity: "120g" },
+      { name: "Avocado", quantity: "1/2" },
+      { name: "Lime", quantity: "1" },
+      { name: "Cilantro", quantity: "2 tbsp" },
+    ],
+  },
+  {
+    id: "greek-beef-kofta-tabbouleh",
+    title: "Greek Beef Kofta with Tabbouleh",
+    description:
+      "Grilled ground beef kofta skewers seasoned with cumin and coriander, served with bulgur tabbouleh and a lemon-tahini drizzle.",
+    ingredients: [
+      { name: "Ground Beef (90/10)", quantity: "200g" },
+      { name: "Bulgur Wheat", quantity: "75g dry" },
+      { name: "Cucumber", quantity: "1 medium" },
+      { name: "Cherry Tomatoes", quantity: "100g" },
+      { name: "Fresh Parsley", quantity: "1/4 cup" },
+      { name: "Lemon", quantity: "1" },
+    ],
+  },
+  {
+    id: "honey-sriracha-salmon-bowls",
+    title: "Honey-Sriracha Salmon Bowls",
+    description:
+      "Baked salmon with a light honey-sriracha glaze over brown rice with steamed broccoli and sliced avocado.",
+    ingredients: [
+      { name: "Salmon Fillet", quantity: "180g" },
+      { name: "Brown Rice", quantity: "75g dry" },
+      { name: "Broccoli", quantity: "150g" },
+      { name: "Avocado", quantity: "1/2" },
+    ],
+  },
+  {
+    id: "stuffed-turkey-zucchini-boats",
+    title: "Turkey-Stuffed Zucchini Boats",
+    description:
+      "Halved zucchini stuffed with seasoned lean ground turkey, diced tomatoes, and a light sprinkle of mozzarella, baked until golden.",
+    ingredients: [
+      { name: "Lean Ground Turkey", quantity: "200g" },
+      { name: "Zucchini", quantity: "2" },
+      { name: "Canned Diced Tomatoes", quantity: "200g" },
+      { name: "Onion", quantity: "1/2" },
+    ],
+  },
+  {
+    id: "citrus-soy-salmon-spinach",
+    title: "Citrus-Soy Salmon with Sesame Spinach",
+    description:
+      "Pan-seared salmon fillet marinated in citrus and soy, served with sesame-dressed wilted spinach and steamed rice.",
+    ingredients: [
+      { name: "Salmon Fillet", quantity: "180g" },
+      { name: "Fresh Spinach", quantity: "100g" },
+      { name: "Jasmine Rice", quantity: "75g dry" },
+      { name: "Orange", quantity: "1" },
+    ],
+  },
+  {
+    id: "al-pastor-pork-pineapple-tacos",
+    title: "Al Pastor Pork & Pineapple Tacos",
+    description:
+      "Achiote-marinated pork cooked with charred pineapple, served in corn tortillas with diced onion and cilantro.",
+    ingredients: [
+      { name: "Pork Shoulder (thinly sliced)", quantity: "200g" },
+      { name: "Pineapple", quantity: "2 rings" },
+      { name: "Corn Tortillas", quantity: "4 small" },
+      { name: "Onion", quantity: "1/2" },
+      { name: "Cilantro", quantity: "2 tbsp" },
+      { name: "Lime", quantity: "1" },
+    ],
+  },
+  {
+    id: "garlic-herb-ribeye-roasted-tomatoes",
+    title: "Garlic-Herb Ribeye with Roasted Tomatoes",
+    description:
+      "Pan-seared ribeye steak with a garlic-herb finish, served with roasted vine tomatoes and a simple arugula salad.",
+    ingredients: [
+      { name: "Ribeye Steak", quantity: "200g" },
+      { name: "Vine Tomatoes", quantity: "200g" },
+      { name: "Arugula", quantity: "60g" },
+      { name: "Lemon", quantity: "1" },
+    ],
+  },
+  {
+    id: "szechuan-beef-broccoli",
+    title: "Szechuan Beef & Broccoli",
+    description:
+      "Thinly sliced beef stir-fried with broccoli florets in a spicy Szechuan sauce, served over steamed jasmine rice.",
+    ingredients: [
+      { name: "Beef Sirloin", quantity: "200g" },
+      { name: "Broccoli", quantity: "200g" },
+      { name: "Jasmine Rice", quantity: "75g dry" },
+      { name: "Green Onion", quantity: "2 stalks" },
+    ],
+  },
+  {
+    id: "herb-grilled-mahi-tropical-salsa",
+    title: "Herb-Grilled Mahi-Mahi with Tropical Salsa",
+    description:
+      "Mahi-mahi fillet grilled with fresh herbs, topped with a pineapple-mango salsa and served with coconut rice.",
+    ingredients: [
+      { name: "Mahi-Mahi Fillet", quantity: "180g" },
+      { name: "Pineapple", quantity: "2 rings" },
+      { name: "Mango", quantity: "1/2" },
+      { name: "Jasmine Rice", quantity: "75g dry" },
+      { name: "Cilantro", quantity: "2 tbsp" },
+      { name: "Lime", quantity: "1" },
+    ],
+  },
+  {
+    id: "turkey-bolognese-penne",
+    title: "Turkey Bolognese with Whole Wheat Penne",
+    description:
+      "Lean ground turkey simmered in a light tomato-basil sauce, tossed with whole wheat penne.",
+    ingredients: [
+      { name: "Lean Ground Turkey", quantity: "250g" },
+      { name: "Whole Wheat Penne", quantity: "75g dry" },
+      { name: "Canned Diced Tomatoes", quantity: "400g" },
+      { name: "Onion", quantity: "1" },
+      { name: "Carrots", quantity: "1 medium" },
+      { name: "Fresh Basil", quantity: "1/4 cup" },
+    ],
+  },
+  {
+    id: "jamaican-jerk-shrimp-rice-peas",
+    title: "Jamaican Jerk Shrimp with Rice & Peas",
+    description:
+      "Jerk-seasoned shrimp sautéed and served over coconut rice and kidney beans with a fresh mango-lime salsa.",
+    ingredients: [
+      { name: "Shrimp (peeled, deveined)", quantity: "200g" },
+      { name: "Jasmine Rice", quantity: "75g dry" },
+      { name: "Canned Kidney Beans", quantity: "150g drained" },
+      { name: "Mango", quantity: "1/2" },
+      { name: "Lime", quantity: "1" },
+    ],
+  },
+  {
+    id: "rosemary-dijon-pork-chops",
+    title: "Rosemary-Dijon Pork Chops",
+    description:
+      "Pan-seared bone-in pork chops with a light rosemary-Dijon glaze, served with roasted baby potatoes and steamed green beans.",
+    ingredients: [
+      { name: "Pork Chops (bone-in)", quantity: "250g" },
+      { name: "Baby Potatoes", quantity: "200g" },
+      { name: "Green Beans", quantity: "150g" },
+    ],
+  },
+  {
+    id: "blackened-chicken-caesar-bowl",
+    title: "Blackened Chicken Caesar Bowl",
+    description:
+      "Cajun-blackened chicken breast sliced over romaine with a light lemon-anchovy dressing, shaved parmesan, and croutons.",
+    ingredients: [
+      { name: "Chicken Breast", quantity: "200g" },
+      { name: "Romaine Lettuce", quantity: "1 head" },
+      { name: "Cherry Tomatoes", quantity: "100g" },
+      { name: "Lemon", quantity: "1" },
+    ],
+  },
+  {
+    id: "five-spice-chicken-plum-sauce",
+    title: "Five-Spice Chicken with Plum Sauce",
+    description:
+      "Crispy five-spice-rubbed chicken thighs with a light plum sauce, served with steamed jasmine rice and sautéed snap peas.",
+    ingredients: [
+      { name: "Chicken Thighs (boneless, skinless)", quantity: "200g" },
+      { name: "Jasmine Rice", quantity: "75g dry" },
+      { name: "Snap Peas", quantity: "150g" },
+      { name: "Plums", quantity: "2" },
+    ],
+  },
+  {
+    id: "mediterranean-stuffed-chicken",
+    title: "Mediterranean Stuffed Chicken Breast",
+    description:
+      "Chicken breast stuffed with sun-dried tomatoes and spinach, baked and served with roasted artichoke hearts and quinoa.",
+    ingredients: [
+      { name: "Chicken Breast", quantity: "200g" },
+      { name: "Fresh Spinach", quantity: "60g" },
+      { name: "Artichoke Hearts", quantity: "100g" },
+      { name: "Quinoa", quantity: "75g dry" },
+      { name: "Cherry Tomatoes", quantity: "100g" },
+    ],
+  },
+  {
+    id: "tequila-lime-chicken-elote-salad",
+    title: "Tequila-Lime Chicken with Elote Salad",
+    description:
+      "Grilled tequila-lime marinated chicken breast served with a chilled Mexican street corn salad and sliced avocado.",
+    ingredients: [
+      { name: "Chicken Breast", quantity: "200g" },
+      { name: "Corn", quantity: "2 ears" },
+      { name: "Avocado", quantity: "1/2" },
+      { name: "Cilantro", quantity: "2 tbsp" },
+      { name: "Lime", quantity: "1" },
+      { name: "Red Onion", quantity: "1/4" },
+    ],
+  },
+  {
+    id: "wasabi-crusted-salmon-soba",
+    title: "Wasabi-Crusted Salmon with Soba Noodles",
+    description:
+      "Baked salmon with a light wasabi-panko crust, served over chilled soba noodles with cucumber, edamame, and a ponzu dressing.",
+    ingredients: [
+      { name: "Salmon Fillet", quantity: "180g" },
+      { name: "Soba Noodles", quantity: "75g dry" },
+      { name: "Cucumber", quantity: "1 medium" },
+      { name: "Edamame", quantity: "100g" },
+      { name: "Green Onion", quantity: "2 stalks" },
+    ],
+  },
+  {
+    id: "pulled-pork-sweet-potato-bowl",
+    title: "Pulled Pork & Sweet Potato Bowl",
+    description:
+      "Slow-cooked pulled pork with a tangy vinegar-based sauce, served over roasted sweet potato rounds with a quick pickled slaw.",
+    ingredients: [
+      { name: "Pork Shoulder", quantity: "200g" },
+      { name: "Sweet Potato", quantity: "1 large" },
+      { name: "Cabbage", quantity: "120g" },
+      { name: "Carrots", quantity: "1 medium" },
+      { name: "Lime", quantity: "1" },
+    ],
+  },
+  {
+    id: "butter-chicken-light",
+    title: "Lighter Butter Chicken with Basmati Rice",
+    description:
+      "Chicken breast simmered in a lightened-up tomato-yogurt curry sauce with warm spices, served over basmati rice.",
+    ingredients: [
+      { name: "Chicken Breast", quantity: "200g" },
+      { name: "Basmati Rice", quantity: "75g dry" },
+      { name: "Canned Diced Tomatoes", quantity: "200g" },
+      { name: "Onion", quantity: "1" },
     ],
   },
 ];
