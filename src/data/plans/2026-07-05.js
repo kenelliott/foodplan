@@ -12,7 +12,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Roast chicken with roasted vegetables and quinoa",
+            menuItemId: "grilled-chicken-roasted-veg-rice",
             notes: "Save all remaining chicken (shred it), extra veggies, and quinoa",
           },
         ],
@@ -22,7 +22,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Chicken stir-fry with remaining chicken, snap peas, carrots, soy sauce, ginger, garlic over jasmine rice",
+            menuItemId: "chicken-stirfry-cauliflower-rice",
             notes: "Cook 3 cups dry rice",
           },
         ],
@@ -42,7 +42,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Baked salmon (2 large fillets) with roasted asparagus and brown rice",
+            menuItemId: "soy-ginger-salmon-asparagus",
             notes: "Cook extra salmon and rice",
           },
         ],
@@ -72,7 +72,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Ground turkey lettuce wraps — seasoned ground turkey (garlic, ginger, soy sauce, sriracha), shredded carrots, green onion, in butter lettuce cups; side of edamame",
+            menuItemId: "turkey-lettuce-wraps",
             notes: "—",
           },
         ],
@@ -89,7 +89,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Slow-cooked chicken thighs with brown rice and fresh coleslaw",
+            menuItemId: "grilled-chicken-roasted-veg-rice",
             notes: "Save remaining chicken and rice",
           },
         ],
@@ -109,7 +109,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Sheet pan shrimp & vegetables — shrimp, zucchini, cherry tomatoes, red onion, olive oil, garlic, Italian seasoning; served over couscous",
+            menuItemId: "sheet-pan-shrimp-veg",
             notes: "Cook couscous",
           },
         ],
@@ -119,7 +119,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Turkey chili — ground turkey, canned kidney beans, canned black beans, diced tomatoes, onion, garlic, chili powder, cumin, smoked paprika",
+            menuItemId: "turkey-chili",
             notes: "Make a large pot (6+ servings)",
           },
         ],

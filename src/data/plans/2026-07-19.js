@@ -45,7 +45,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Grilled chicken breast with roasted vegetables and brown rice (1 cup)",
+            menuItemId: "grilled-chicken-roasted-veg-rice",
             notes: "Save remaining chicken, veggies, and rice",
           },
         ],
@@ -55,7 +55,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Chicken & vegetable stir-fry — snap peas, broccoli, carrots, ginger, garlic, soy sauce over cauliflower rice + ½ cup brown rice",
+            menuItemId: "chicken-stirfry-cauliflower-rice",
             notes: "Cauliflower rice stretches the grain portion; finishes chicken",
           },
         ],
@@ -75,7 +75,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Baked salmon fillet (6 oz) with roasted asparagus, steamed broccoli, and brown rice (¾ cup)",
+            menuItemId: "soy-ginger-salmon-asparagus",
             notes: "—",
           },
         ],
@@ -85,7 +85,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Turkey meatball & vegetable soup — ground turkey meatballs, zucchini, carrots, celery, diced tomatoes, spinach",
+            menuItemId: "turkey-meatball-soup",
             notes: "Make a large pot (6+ servings); hearty, high-protein, low-starch",
           },
         ],
@@ -105,7 +105,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Lean ground turkey lettuce wraps — seasoned turkey (garlic, ginger, soy sauce), shredded carrots, green onion, butter lettuce cups; side of steamed edamame",
+            menuItemId: "turkey-lettuce-wraps",
             notes: "—",
           },
         ],
@@ -122,7 +122,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Slow-cooked chicken thighs with roasted vegetables and quinoa (¾ cup)",
+            menuItemId: "grilled-chicken-roasted-veg-rice",
             notes: "Save remaining chicken and quinoa",
           },
         ],
@@ -132,7 +132,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Chicken & broccoli with quinoa (¾ cup) — garlic, ginger, low-sodium soy sauce",
+            menuItemId: "chicken-stirfry-cauliflower-rice",
             notes: "Finishes most of the chicken",
           },
         ],
@@ -152,7 +152,7 @@ export const weeks = [
         meals: [
           {
             meal: "Dinner",
-            menu: "Turkey chili — lean ground turkey, kidney beans, black beans, diced tomatoes, onion, garlic, chili powder, cumin, smoked paprika",
+            menuItemId: "turkey-chili",
             notes: "Make a large pot (6+ servings); high protein, high fiber",
           },
         ],

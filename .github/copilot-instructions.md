@@ -73,3 +73,13 @@ src/
 ### Editing meals or ingredients
 
 When a day, meal, or ingredient is changed in a plan file, **always update the `shoppingLists` in the same file to match**. Add new ingredients and remove ones that are no longer needed. The Combined Shopping List component derives its data from `shoppingLists`, so they must stay in sync.
+
+### Meal rules
+
+All dinner recipes must follow these constraints:
+
+1. **Meat is required.** Every meal must include a meat or seafood protein — no vegetarian dinners.
+2. **One cooked-vegetable method per meal.** If vegetables are roasted, all cooked vegetables in that meal are roasted. Do not mix roasting with steaming, sautéing, etc. Raw/fresh sides (salads, sliced cucumber) do not count toward this rule.
+3. **No spiralized vegetables.** Do not use zucchini noodles, spiralized carrots, or any vegetable-as-noodle substitute.
+4. **Light sauces only.** Sauces should add flavor without heavy calories. No cream-based, cheese-heavy, or butter-rich sauces. Prefer vinaigrettes, citrus-based, soy-ginger, chimichurri, salsa, or herb-forward sauces.
+5. **Under 1 hour of active prep.** Any meal that requires more than 60 minutes of hands-on preparation must be scheduled on a Prep Day (Sunday).

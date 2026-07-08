@@ -15,6 +15,7 @@ import {
 	TableRow,
 	Typography,
 } from "@mui/material";
+import { getMenuItem } from "../data/menuItems";
 
 export default function DayAccordion({ dayData }) {
 	return (
@@ -49,16 +50,20 @@ export default function DayAccordion({ dayData }) {
 							</TableRow>
 						</TableHead>
 						<TableBody>
-							{dayData.meals.map((m) => (
-								<TableRow key={m.meal}>
-									<TableCell>{m.menu}</TableCell>
-									<TableCell>
-										<Typography variant="body2" color="text.secondary">
-											{m.notes}
-										</Typography>
-									</TableCell>
-								</TableRow>
-							))}
+							{dayData.meals.map((m) => {
+								const menuItem = m.menuItemId ? getMenuItem(m.menuItemId) : null;
+								const menuText = menuItem ? menuItem.title : m.menu;
+								return (
+									<TableRow key={m.meal}>
+										<TableCell>{menuText}</TableCell>
+										<TableCell>
+											<Typography variant="body2" color="text.secondary">
+												{m.notes}
+											</Typography>
+										</TableCell>
+									</TableRow>
+								);
+							})}
 						</TableBody>
 					</Table>
 				</TableContainer>

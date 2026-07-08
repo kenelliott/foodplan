@@ -7,14 +7,14 @@ const dayWithBatch = {
 	day: "Sunday — Prep Day",
 	batchNotes: "Roast a whole chicken",
 	meals: [
-		{ meal: "Dinner", menu: "Roast chicken with roasted vegetables", notes: "Save leftovers" },
+		{ meal: "Dinner", menuItemId: "grilled-chicken-roasted-veg-rice", notes: "Save leftovers" },
 	],
 };
 
-const dayWithoutBatch = {
-	day: "Monday",
+const dayWithInlineMenu = {
+	day: "Friday",
 	meals: [
-		{ meal: "Dinner", menu: "Chicken stir-fry", notes: "Cook extra rice" },
+		{ meal: "Dinner", menu: "🍽️ Eating out", notes: "Enjoy" },
 	],
 };
 
@@ -31,7 +31,7 @@ describe("DayAccordion", () => {
 		await userEvent.click(screen.getByRole("button", { name: /Sunday — Prep Day/ }));
 
 		const table = screen.getByRole("table");
-		expect(within(table).getByText("Roast chicken with roasted vegetables")).toBeInTheDocument();
+		expect(within(table).getByText("Grilled Chicken with Roasted Vegetables & Brown Rice")).toBeInTheDocument();
 	});
 
 	it("shows batch notes alert when batchNotes is present", async () => {
@@ -42,25 +42,25 @@ describe("DayAccordion", () => {
 	});
 
 	it("does not show batch notes when absent", async () => {
-		render(<DayAccordion dayData={dayWithoutBatch} />);
-		await userEvent.click(screen.getByRole("button", { name: /Monday/ }));
+		render(<DayAccordion dayData={dayWithInlineMenu} />);
+		await userEvent.click(screen.getByRole("button", { name: /Friday/ }));
 
 		expect(screen.queryByRole("alert")).not.toBeInTheDocument();
 	});
 
-	it("renders the dinner row", async () => {
-		render(<DayAccordion dayData={dayWithoutBatch} />);
-		await userEvent.click(screen.getByRole("button", { name: /Monday/ }));
+	it("renders inline menu text when no menuItemId", async () => {
+		render(<DayAccordion dayData={dayWithInlineMenu} />);
+		await userEvent.click(screen.getByRole("button", { name: /Friday/ }));
 
 		const table = screen.getByRole("table");
-		expect(within(table).getByText("Chicken stir-fry")).toBeInTheDocument();
+		expect(within(table).getByText(/Eating out/)).toBeInTheDocument();
 	});
 
 	it("displays meal notes", async () => {
-		render(<DayAccordion dayData={dayWithoutBatch} />);
-		await userEvent.click(screen.getByRole("button", { name: /Monday/ }));
+		render(<DayAccordion dayData={dayWithBatch} />);
+		await userEvent.click(screen.getByRole("button", { name: /Sunday — Prep Day/ }));
 
 		const table = screen.getByRole("table");
-		expect(within(table).getByText("Cook extra rice")).toBeInTheDocument();
+		expect(within(table).getByText("Save leftovers")).toBeInTheDocument();
 	});
 });
