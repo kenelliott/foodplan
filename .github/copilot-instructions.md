@@ -85,3 +85,5 @@ All dinner recipes must follow these constraints:
 5. **Under 1 hour of active prep.** Any meal that requires more than 60 minutes of hands-on preparation must be scheduled on a Prep Day (Sunday).
 6. **No scallops.** Do not include scallops in any meal.
 7. **No catfish.** Do not include catfish in any meal.
+8. **HEB-available proteins only.** All proteins must be reliably found at HEB in North Texas. Allowed: chicken (all cuts), turkey, beef (sirloin, chuck, flank, skirt, ribeye, short ribs), pork (chops, tenderloin, shoulder), salmon, shrimp, tilapia, cod, mahi-mahi. Do not use: duck, lamb, pork belly, Cornish hen, ahi tuna, swordfish, halibut, sole, black cod, grouper, rainbow trout, or other specialty/seasonal proteins.
+9. **Share ingredients across meals.** When planning a week of meals, reuse proteins, produce, and pantry items across multiple dinners to simplify the shopping list and reduce waste. For example, if one meal uses chicken thighs and bell peppers, schedule another meal that week using the same ingredients in a different preparation.
