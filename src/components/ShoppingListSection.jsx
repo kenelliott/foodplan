@@ -40,7 +40,7 @@ export default function ShoppingListSection({ shoppingLists }) {
 					>
 						<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
-							sx={{ bgcolor: "grey.50" }}
+							sx={{ bgcolor: "action.hover" }}
 						>
 							<Typography fontWeight={600}>{list.label}</Typography>
 						</AccordionSummary>

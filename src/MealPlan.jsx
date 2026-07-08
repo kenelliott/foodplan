@@ -26,7 +26,16 @@ export default function MealPlan() {
 
 	return (
 		<Box sx={{ maxWidth: 900, mx: "auto", py: 4, px: 2 }}>
-			<Typography variant="h3" fontWeight={800} gutterBottom>
+			<Typography
+				variant="h3"
+				fontWeight={800}
+				gutterBottom
+				sx={{
+					background: "linear-gradient(135deg, #7c4dff 0%, #00e5ff 100%)",
+					WebkitBackgroundClip: "text",
+					WebkitTextFillColor: "transparent",
+				}}
+			>
 				{intro.title}
 			</Typography>
 
