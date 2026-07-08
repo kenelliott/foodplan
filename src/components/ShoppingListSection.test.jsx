@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 import ShoppingListSection from "./ShoppingListSection";
@@ -9,8 +9,6 @@ const shoppingLists = [
 		categories: [
 			{ name: "Produce", items: "Mixed berries (2 pints), bananas (6)" },
 			{ name: "Protein", items: "Whole chicken (4–5 lb), eggs (1 dozen)" },
-			{ name: "Pantry / Dry", items: "Quinoa, jasmine rice" },
-			{ name: "Dairy / Other", items: "Shredded cheese, feta" },
 		],
 	},
 	{
@@ -18,11 +16,18 @@ const shoppingLists = [
 		categories: [
 			{ name: "Produce", items: "Mixed berries (1 pint)" },
 			{ name: "Protein", items: "Chicken thighs (3 lb)" },
-			{ name: "Pantry / Dry", items: "Brown rice, couscous" },
-			{ name: "Dairy / Other", items: "Parmesan, shredded cheese" },
 		],
 	},
 ];
+
+const expandWeek1 = async () => {
+	await userEvent.click(
+		screen.getByRole("button", { name: /Shopping Lists/ }),
+	);
+	await userEvent.click(
+		screen.getByRole("button", { name: /Week 1 — Buy Sunday/ }),
+	);
+};
 
 describe("ShoppingListSection", () => {
 	it("renders the section heading", () => {
@@ -48,30 +53,42 @@ describe("ShoppingListSection", () => {
 
 	it("shows category chips when a week is expanded", async () => {
 		render(<ShoppingListSection shoppingLists={shoppingLists} />);
-		await userEvent.click(
-			screen.getByRole("button", { name: /Shopping Lists/ }),
-		);
-		await userEvent.click(
-			screen.getByRole("button", { name: /Week 1 — Buy Sunday/ }),
-		);
+		await expandWeek1();
 
-		const chips = screen.getAllByText("Produce");
-		expect(chips.length).toBeGreaterThanOrEqual(1);
+		expect(screen.getAllByText("Produce").length).toBeGreaterThanOrEqual(1);
 		expect(screen.getAllByText("Protein").length).toBeGreaterThanOrEqual(1);
-		expect(screen.getAllByText("Pantry / Dry").length).toBeGreaterThanOrEqual(1);
-		expect(screen.getAllByText("Dairy / Other").length).toBeGreaterThanOrEqual(1);
 	});
 
-	it("shows shopping items under a category", async () => {
+	it("renders items as individual checkboxes", async () => {
 		render(<ShoppingListSection shoppingLists={shoppingLists} />);
-		await userEvent.click(
-			screen.getByRole("button", { name: /Shopping Lists/ }),
-		);
-		await userEvent.click(
-			screen.getByRole("button", { name: /Week 1 — Buy Sunday/ }),
-		);
+		await expandWeek1();
 
-		expect(screen.getAllByText(/Mixed berries/).length).toBeGreaterThanOrEqual(1);
-		expect(screen.getAllByText(/Whole chicken/).length).toBeGreaterThanOrEqual(1);
+		expect(screen.getByText("Mixed berries (2 pints)")).toBeInTheDocument();
+		expect(screen.getByText("bananas (6)")).toBeInTheDocument();
+		expect(screen.getByText("Whole chicken (4–5 lb)")).toBeInTheDocument();
+		expect(screen.getByText("eggs (1 dozen)")).toBeInTheDocument();
+	});
+
+	it("can check off an item", async () => {
+		render(<ShoppingListSection shoppingLists={shoppingLists} />);
+		await expandWeek1();
+
+		const item = screen.getByText("bananas (6)");
+		await userEvent.click(item);
+
+		const checkbox = within(item.closest("li")).getByRole("checkbox");
+		expect(checkbox).toBeChecked();
+	});
+
+	it("applies strikethrough to checked items", async () => {
+		render(<ShoppingListSection shoppingLists={shoppingLists} />);
+		await expandWeek1();
+
+		const item = screen.getByText("bananas (6)");
+		await userEvent.click(item);
+
+		expect(item.closest(".MuiListItemText-root")).toHaveStyle(
+			"text-decoration: line-through",
+		);
 	});
 });

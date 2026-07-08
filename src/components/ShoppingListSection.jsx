@@ -4,13 +4,25 @@ import {
 	Accordion,
 	AccordionDetails,
 	AccordionSummary,
-	Box,
+	Checkbox,
 	Chip,
 	Divider,
+	List,
+	ListItem,
+	ListItemButton,
+	ListItemIcon,
+	ListItemText,
 	Typography,
 } from "@mui/material";
+import { useState } from "react";
 
 export default function ShoppingListSection({ shoppingLists }) {
+	const [checked, setChecked] = useState({});
+
+	const toggleItem = (item) => {
+		setChecked((prev) => ({ ...prev, [item]: !prev[item] }));
+	};
+
 	return (
 		<Accordion>
 			<AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -33,21 +45,47 @@ export default function ShoppingListSection({ shoppingLists }) {
 							<Typography fontWeight={600}>{list.label}</Typography>
 						</AccordionSummary>
 						<AccordionDetails>
-							{list.categories.map((cat, i) => (
-								<Box
-									key={cat.name}
-									sx={{ mb: i < list.categories.length - 1 ? 2 : 0 }}
-								>
-									<Chip
-										label={cat.name}
-										color="primary"
-										size="small"
-										sx={{ mb: 1 }}
-									/>
-									<Typography variant="body2">{cat.items}</Typography>
-									{i < list.categories.length - 1 && <Divider sx={{ mt: 2 }} />}
-								</Box>
-							))}
+							{list.categories.map((cat, i) => {
+								const items = cat.items.split(",").map((s) => s.trim()).filter(Boolean);
+								return (
+									<div key={cat.name}>
+										<Chip
+											label={cat.name}
+											color="primary"
+											size="small"
+											sx={{ mb: 1, mt: i > 0 ? 1 : 0 }}
+										/>
+										<List dense disablePadding>
+											{items.map((item) => {
+												const key = `${list.label}::${cat.name}::${item}`;
+												return (
+													<ListItem key={key} disablePadding>
+														<ListItemButton dense onClick={() => toggleItem(key)}>
+															<ListItemIcon sx={{ minWidth: 36 }}>
+																<Checkbox
+																	edge="start"
+																	checked={!!checked[key]}
+																	tabIndex={-1}
+																	disableRipple
+																	size="small"
+																/>
+															</ListItemIcon>
+															<ListItemText
+																primary={item}
+																sx={{
+																	textDecoration: checked[key] ? "line-through" : "none",
+																	color: checked[key] ? "text.disabled" : "text.primary",
+																}}
+															/>
+														</ListItemButton>
+													</ListItem>
+												);
+											})}
+										</List>
+										{i < list.categories.length - 1 && <Divider sx={{ mt: 1 }} />}
+									</div>
+								);
+							})}
 						</AccordionDetails>
 					</Accordion>
 				))}
