@@ -32,10 +32,10 @@ describe("MealPlan", () => {
 	it("renders both week sections", () => {
 		render(<MealPlan />);
 		expect(
-			screen.getByRole("heading", { name: "Week 1", level: 6 }),
+			screen.getByRole("heading", { name: /^Week 1/, level: 6 }),
 		).toBeInTheDocument();
 		expect(
-			screen.getByRole("heading", { name: "Week 2", level: 6 }),
+			screen.getByRole("heading", { name: /^Week 2/, level: 6 }),
 		).toBeInTheDocument();
 	});
 

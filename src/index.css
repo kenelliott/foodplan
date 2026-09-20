@@ -30,6 +30,19 @@
   }
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
@@ -52,11 +65,13 @@
 
 body {
   margin: 0;
+  background: var(--bg);
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1126px;
+  min-width: 0;
   margin: 0 auto;
   text-align: center;
   border-inline: 1px solid var(--border);
@@ -64,6 +79,33 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  overflow-x: clip;
+}
+
+@media (max-width: 600px) {
+  .MuiAccordionSummary-content,
+  .MuiListItemText-root {
+    min-width: 0;
+  }
+
+  .MuiAccordionSummary-content .MuiTypography-root,
+  .MuiListItemText-root .MuiTypography-root,
+  .MuiAlert-message {
+    overflow-wrap: anywhere;
+  }
+
+  .MuiTableContainer-root {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .MuiTable-root {
+    table-layout: fixed;
+  }
+
+  .MuiTableCell-root {
+    overflow-wrap: anywhere;
+  }
 }
 
 h1,

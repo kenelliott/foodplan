@@ -25,12 +25,28 @@ export default function MealPlan() {
 	const shoppingLists = buildShoppingLists(plan.weeks, servings);
 
 	return (
-		<Box sx={{ maxWidth: 900, mx: "auto", py: 4, px: 2 }}>
+		<Box
+			sx={{
+				width: "100%",
+				maxWidth: 900,
+				minWidth: 0,
+				mx: "auto",
+				py: { xs: 2, sm: 4 },
+				px: { xs: 1.5, sm: 2 },
+				overflow: "hidden",
+				"& .MuiAccordion-root, & .MuiAccordionSummary-root, & .MuiAccordionDetails-root": {
+					minWidth: 0,
+				},
+			}}
+		>
 			<Typography
 				variant="h3"
 				fontWeight={800}
 				gutterBottom
 				sx={{
+					fontSize: { xs: "2rem", sm: "3rem" },
+					lineHeight: 1.1,
+					overflowWrap: "anywhere",
 					background: "linear-gradient(135deg, #7c4dff 0%, #00e5ff 100%)",
 					WebkitBackgroundClip: "text",
 					WebkitTextFillColor: "transparent",
@@ -39,8 +55,12 @@ export default function MealPlan() {
 				{intro.title}
 			</Typography>
 
-			<Stack direction="row" spacing={2} sx={{ mb: 3 }}>
-				<FormControl sx={{ flex: 1 }}>
+			<Stack
+				direction={{ xs: "column", sm: "row" }}
+				spacing={2}
+				sx={{ mb: 3, minWidth: 0 }}
+			>
+				<FormControl sx={{ flex: 1, width: "100%", minWidth: 0 }}>
 					<InputLabel id="plan-select-label">Meal Plan</InputLabel>
 					<Select
 						labelId="plan-select-label"
@@ -57,7 +77,7 @@ export default function MealPlan() {
 					</Select>
 				</FormControl>
 
-				<FormControl sx={{ minWidth: 100 }}>
+				<FormControl sx={{ width: { xs: "100%", sm: 120 }, flexShrink: 0 }}>
 					<InputLabel id="servings-select-label">People</InputLabel>
 					<Select
 						labelId="servings-select-label"
