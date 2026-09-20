@@ -31,7 +31,7 @@ export default function ShoppingListSection({ shoppingLists }) {
 					Shopping Lists
 				</Typography>
 			</AccordionSummary>
-			<AccordionDetails>
+			<AccordionDetails sx={{ px: { xs: 1, sm: 2 } }}>
 				{shoppingLists.map((list) => (
 					<Accordion
 						key={list.label}
@@ -40,11 +40,11 @@ export default function ShoppingListSection({ shoppingLists }) {
 					>
 						<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
-							sx={{ bgcolor: "action.hover" }}
+							sx={{ bgcolor: "action.hover", px: { xs: 1.5, sm: 2 } }}
 						>
 							<Typography fontWeight={600}>{list.label}</Typography>
 						</AccordionSummary>
-						<AccordionDetails>
+						<AccordionDetails sx={{ px: { xs: 1, sm: 2 } }}>
 							{list.categories.map((cat, i) => {
 								const items = Array.isArray(cat.items) ? cat.items : [cat.items];
 								return (
@@ -55,12 +55,23 @@ export default function ShoppingListSection({ shoppingLists }) {
 											size="small"
 											sx={{ mb: 1, mt: i > 0 ? 1 : 0 }}
 										/>
-										<List dense disablePadding sx={{ columns: 3 }}>
+										<List
+											dense
+											disablePadding
+											sx={{
+												columns: { xs: 1, sm: 2, md: 3 },
+												columnGap: { sm: 2 },
+											}}
+										>
 											{items.map((item) => {
 												const key = `${list.label}::${cat.name}::${item}`;
 												return (
 													<ListItem key={key} disablePadding sx={{ breakInside: "avoid" }}>
-														<ListItemButton dense onClick={() => toggleItem(key)}>
+												<ListItemButton
+													dense
+													onClick={() => toggleItem(key)}
+													sx={{ px: { xs: 0.5, sm: 1 } }}
+												>
 															<ListItemIcon sx={{ minWidth: 36 }}>
 																<Checkbox
 																	edge="start"
